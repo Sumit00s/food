@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
+
+:root {
+  --primary-color: #f7136a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/***Navbar***/
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px var(--primary-color);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+#navbar h1 {
+  margin-left: 70px;
+}
+
+#navbar h1 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+}
+
+#navbar h1 a span {
+  color: var(--primary-color);
+  font-size: 40px;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px 0px 0px;
+}
+
+#navbar ul li {
+  margin: 0px 25px;
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+#navbar ul li a:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/****Header section****/
+
+header {
+  background: url("/img/main-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 60px;
+  color: #fff;
+}
+
+header p {
+  max-width: 1000px;
+  color: #fff;
+  margin-top: 30px;
+  line-height: 1.5rem;
+  font-size: 20px;
+}
+
+header a {
+  margin-top: 40px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+header a:hover {
+  letter-spacing: 5px;
+}
+
+/***About us Section****/
+
+.container {
+  width: 1350px;
+  margin: auto;
+}
+
+#about {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80vh;
+  margin-bottom: 50px;
+}
+
+#about .about-us-lines {
+  width: 650px;
+}
+
+#about .about-us-img img {
+  width: 500px;
+  height: 450px;
+}
+
+#about .about-us-lines h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+#about .about-us-lines h1 span {
+  color: var(--primary-color);
+  letter-spacing: 2px;
+}
+
+#about .about-us-lines p {
+  margin-top: 30px;
+  line-height: 2rem;
+}
+
+/****Menu Secion****/
+
+#menu .menu-heading {
+  text-align: center;
+}
+
+#menu .menu-heading h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+#menu .menu-heading h1 span {
+  color: var(--primary-color);
+}
+
+#menu .menu-heading p {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.food-menu .menu-row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.food-menu .menu-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  width: 300px;
+  height: 320px;
+  background-color: #fff;
+  margin: 20px 40px;
+  box-sizing: border-box;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid #fff;
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 250px;
+}
+
+.menu-item h3 {
+  padding: 15px;
+  text-align: left;
+}
+
+/***Experts Section***/
+
+.expert-headings {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.expert-headings h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.expert-headings h1 span {
+  color: var(--primary-color);
+}
+
+.expert-headings p {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.chefs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0px;
+}
+
+.chef {
+  width: 280px;
+  height: 350px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 20px;
+  margin: 0px 20px;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.chef img {
+  width: 100%;
+  height: 300px;
+}
+
+.chef h3 {
+  padding: 15px 0px;
+  text-align: center;
+}
+
+/*testimonials*/
+
+#testimonials {
+  background: url("./img/bg2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.testimonials-headings {
+  text-align: center;
+  padding: 50px;
+}
+
+.testimonials-headings h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.testimonials-headings h1 span {
+  color: var(--primary-color);
+}
+
+.testimonials-headings p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.testi-card {
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+  margin: 0px 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  border-top: 15px solid var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.testi-card span {
+  color: var(--primary-color);
+}
+
+.testi-card .img-testi {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 0px 30px;
+}
+
+.testi-card p {
+  margin-bottom: 18px;
+  line-height: 1.3;
+  font-size: 20px;
+  text-align: justify;
+  padding: 0px 20px;
+}
+
+/*Conatact Section*/
+
+#contact .contact {
+  background: url("./img/bg3.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+#contact .testimonials-headings h1 {
+  color: #000;
+}
+
+#contact .testimonials-headings p {
+  color: #000;
+}
+
+/*Contact Form*/
+
+.contact-form {
+  max-width: 360px;
+  height: 450px;
+  background-color: rgb(253, 250, 250);
+  box-shadow: 40px 20px 20px #e9e7e7, -40px -20px 100px #d6d2d2;
+  margin: 0px 150px;
+  box-sizing: border-box;
+  padding: 25px;
+  border-radius: 20px;
+  border-top: 20px solid var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-items {
+  margin-top: 20px;
+}
+
+.contact-items h2 {
+  letter-spacing: 2px;
+}
+
+.contact-items span {
+  color: var(--primary-color);
+}
+
+.contact-items input {
+  padding: 12px 10px;
+  outline: none;
+  border-left: 3px solid var(--primary-color);
+  border-top: 2px solid rgb(83, 82, 82);
+  border-bottom: 2px solid rgb(83, 82, 82);
+  border-right: 2px solid rgb(83, 82, 82);
+}
+
+.contact-items textarea {
+  padding: 35px 10px;
+  outline: none;
+  border-left: 3px solid var(--primary-color);
+  border-top: 2px solid rgb(83, 82, 82);
+  border-bottom: 2px solid rgb(83, 82, 82);
+  border-right: 2px solid rgb(83, 82, 82);
+}
+
+.contact-items button {
+  padding: 15px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 20px;
+  width: 30%;
+  outline: none;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/*Media Query*/
+
+@media (max-width: 500px) {
+  header {
+    background: url("/img/main-bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 50px;
+    color: #fff;
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+  header p {
+    max-width: 1000px;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 1.5rem;
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+
+  header a {
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .remove-text {
+    display: none;
+  }
+
+  #navbar h1 {
+    margin: auto;
+    padding: 2px;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px 0px 0px;
+    display: none;
+  }
+
+  #menu .menu-heading {
+    text-align: center;
+    margin-bottom: -50px;
+    margin-top: 50px;
+  }
+
+  #menu .menu-heading h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  #menu .menu-heading p {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  .expert-headings {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .expert-headings h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .expert-headings p {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-bottom: -50px;
+  }
+
+  .testimonials-headings h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+
+  .testimonials-headings p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: -40px;
+  }
+
+  #about {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+
+  #about .about-us-lines {
+    padding: 20px;
+    width: 430px;
+    margin: 0px 0px 20px 20px;
+  }
+
+  #about .about-us-img img {
+    width: 270px;
+    height: 270px;
+    margin: 0px 0px 50px 100px;
+    overflow: hidden;
+  }
+
+  #about .about-us-lines h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+
+  #about .about-us-lines h1 span {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+  }
+
+  #about .about-us-lines p {
+    margin-top: 30px;
+    line-height: 2rem;
+  }
+
+  .food-menu .menu-row-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .food-menu .menu-row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0px;
+  }
+
+  .chef {
+    width: 280px;
+    height: 350px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 20px;
+    border-bottom: 3px solid var(--primary-color);
+  }
+
+  #testimonials {
+    background: url("./img/bg2.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1550px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .testimonials-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testi-card {
+    width: 300px;
+    height: 420px;
+    background-color: #fff;
+    margin: 15px auto;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    border-top: 15px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+  }
+
+  .testi-card .img-testi {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px 0px 20px;
+  }
+
+  .contact-form {
+    width: 400px;
+    height: 430px;
+    background-color: rgb(253, 250, 250);
+    box-shadow: 40px 20px -20px #e9e7e7, -40px -20px -100px #d6d2d2;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 20px;
+    border-top: 20px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+    overflow: hidden;
+  }
+
+  .contact-items button {
+    padding: 13px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+  }
+}
